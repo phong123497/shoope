@@ -328,11 +328,274 @@ color: red;
     flex:1;
     padding: 10px 0px;
 
-}   
+} 
+.socials-desc,   
 .social-icon{
     margin-left: 10px;
+}
+
+.auth-form__help {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding:  20px;
+
+}
+.auth-form__help-link {
+    display: inline-block;
+    position: relative;
+    
     
 }
-.socials-desc {
-    margin-left: 10px;
+.auth-form__help-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right:-10px;
+    height: 15px;
+    border: 1px solid red;
+
+
 }
+.help-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.help-link1 {
+   
+    color: var(--text-color);
+    margin-left: 15px;
+}
+/* header-search */
+.header-search {
+    height: var(--search-height);
+    display: flex; 
+    align-items: center;
+    margin: 0 8px;
+}
+.header__logo {
+    width:200px;
+}
+.header__logo-img {
+    width:150px;
+    
+}
+
+.hearder__search-box {
+    
+    background-color: var(--white-color);
+    flex:1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.hearder__cart{
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+.header__icon-cart {
+    color: var(--white-color);
+    font-size: 2.2rem;
+}
+.header__search-wrap-input {
+    flex: 1;
+    height: 100%;
+    position: relative;
+
+}
+.search__key {
+    border-radius: 2px;
+    border: none;
+    padding: 12px 16px;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    width: 100%;
+   
+
+}
+.header__search-select{
+    
+    border-left:  1px solid #333;
+    padding-left: 10px;
+    text-align: center;
+    position: relative;
+}
+.header__search-label{
+    font-size:1.4rem ;
+    padding: 4px;
+}
+
+.search-icon-glass{
+    font-size: 2.2rem;
+}
+.select-icon {
+    font-size: 1.7rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.search-icon{
+    padding: 7px 24px;
+    margin-right: 2px;
+    background-color:var(--primary-color);
+    margin-left: 20px;
+    color: var(--white-color);
+    border-radius: 4px;
+
+}
+.search-icon:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.header__search-select:hover .header__search-option {
+    display: block;
+}
+
+.header__search-option {
+    display:none;
+    position: absolute;
+    right: -33px;
+    top:115%;
+    background:var(--white-color);
+    list-style: none;
+    width: 150px;
+    border-radius: 3px;
+    padding: 15px;
+    text-align: right;
+    box-shadow: 0 1px 1px #ccc;
+    margin-right: 10px; 
+    animation: fadeIn ease-in  0.4s ;
+}
+.header__search-option::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 26px;
+    width: 100%;
+    top:-20px;
+    right: 0;
+    
+}
+
+.search-item {
+    padding: 8px 0px;
+    font-size: 1.4rem;
+    
+}
+.header__search-option span {
+    margin: 0 6px;
+}
+.header__search-option i {
+    color: var(--primary-color);
+}
+/* tim kiem */
+.search-history {
+    display: none;
+    position:absolute;
+    top: 105%;
+    left: 0;
+    width:calc(100% - 16px);
+    background-color: var(--white-color);
+    padding: 10px ;
+    box-shadow: 0 1px 1px rgb(142, 139, 139);
+    border-radius: 3px;
+    animation: fadeIn ease-in 0.3s ;
+  
+
+}
+.search__key:focus ~ .search-history{
+    display: block;
+}
+
+.search-heading {
+    font-size: 1.4rem;
+    opacity: 0.4;
+   
+
+}search__key
+.search-history-list {
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+    margin-bottom: 0;
+}
+.search-history-item {
+    padding: 6px 0;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.search-history-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+} 
+.search-history-item:hover {
+    background-color: #dbd4c8;
+}
+.search-history-item a  { 
+    text-decoration: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: block;
+}
+/*  gio hang  */
+.header__wrap-icon {
+    display: inline-block;
+    position: relative;
+    padding: 0 12px;
+    cursor: pointer;
+}
+.hearder__cart-list{
+    display: none;
+    position:absolute;
+    top:calc( 100% + 12px);
+    right:30px;
+    width: 400px;
+    background-color: var(--white-color);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgb(63, 62, 62);
+    border-radius: 5px;
+}
+.hearder__cart-list::before{
+    content: "";
+    display: block;
+    border-width: 20px 35px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 8px;
+    top:-31px;
+}
+.hearder__cart-list::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    right: 8px;
+    top: -20px;
+}
+
+/* khi k phai la div con cua cung 1 div  ma la 2 div khac nhau 
+thi phai dung dau + ~ de the hien va */
+.header__wrap-icon:hover +.hearder__cart-list {
+    display: block;
+    
+}
+
+.hearder__cart-empty-list{
+    padding:28px 0;
+}
+.hearder__cart-list > p {
+    font-size: 1.4rem;
+    color:var(--text-color) ;
+
+}
+.hearder__cart-img-empty{
+    width: 60%;
+}   
