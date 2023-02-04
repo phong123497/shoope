@@ -125,8 +125,8 @@
     right: 0;
     background-color: #fff;
     width: 404px;
-    border: 1px solid rgb(60, 56, 56);
-    border-radius:2px ;
+    border: 1px solid rgb(237, 216, 216);
+    border-radius:5px ;
     cursor:default;
     transform-origin: calc(100% - 20px) top;
     animation:navbarNotify ease-in 0.3s ;
@@ -167,6 +167,7 @@
 .navbar__notify--header {
     height: 40px;
     background-color: var(--white-color);
+    border-radius: 5px;
 }
 .navbar__notify--header h3 {
     line-height: 40px;
@@ -176,9 +177,10 @@
     color:rgba(0,0,0, 0.5);
     cursor: text;
     user-select: none;
-    
 }
 .notify__list {
+    background-color: var(--white-color);
+    box-shadow: 1 1px px rgb(228, 203, 203) ;
     padding-left:0px;
     padding:10px;
     font-size: 1.3rem;
@@ -186,20 +188,15 @@
     
 }
 .notify__item{
-    background-color: rgb(239, 208, 201);
-    
 }
 .notify__item:hover{
     background-color: #f1ebdf;
 }
-.notify__item--viewed {
 
-}
 .notify__link {
     display: flex;
     padding: 12px;
     text-decoration: none;
-    
 }   
 
 .notify__img {
@@ -208,14 +205,11 @@
     /* lam cho anh k bi meo */
     object-fit: contain;
     display: inline-block;
-    
-
 }
 
 .notify__info {
     /* flex: 3; */
     margin-left: 12px;
-
 }
 
 .notify__name {
@@ -230,7 +224,6 @@
     font-size: 1.2rem;
     line-height: 1.4;
     color:rgba(0,0,0, 0.5);
-    
 }
 .navbar__footer-link {
     display: block;
@@ -251,7 +244,6 @@
     width: 500px;
     background-color:var(--white-color);
     padding: 20px;
-    
 }
 .auth-form__header {
     display: flex;
@@ -298,14 +290,12 @@ color: red;
 .auth-form__link {
     color:var( --primary-color);
     text-decoration: none;
-    
 }
 
 .auth-form__control {
     display: flex;
     justify-content: flex-end;
     margin: 60px 20px 0px 0px ;
-
 }
 .btn-back {
     
@@ -315,7 +305,6 @@ color: red;
     background-color:#f5f5f5;
     display: flex;
     font-size: 1.6rem;
-    
 }
 .btn-fb {
     background-color:#3a5a98;
@@ -345,8 +334,6 @@ color: red;
 .auth-form__help-link {
     display: inline-block;
     position: relative;
-    
-    
 }
 .auth-form__help-link::after {
     content: "";
@@ -356,8 +343,6 @@ color: red;
     right:-10px;
     height: 15px;
     border: 1px solid red;
-
-
 }
 .help-link {
     text-decoration: none;
@@ -401,7 +386,20 @@ color: red;
 }
 .header__icon-cart {
     color: var(--white-color);
-    font-size: 2.2rem;
+    font-size: 2.6rem;
+}
+.hearder__cart-notice {
+    display: inline-block;
+    position: absolute;
+    color: var(--primary-color);
+    top: -10px;
+    right: 1px;
+    font-size: 1.4rem;
+    padding: 2px 7px;
+    line-height: 1.3rem;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: var(--white-color);
 }
 .header__search-wrap-input {
     flex: 1;
@@ -518,17 +516,19 @@ color: red;
     opacity: 0.4;
    
 
-}search__key
+}
 .search-history-list {
     display: block;
     width: 100%;
     padding: 8px 0px;
     margin-bottom: 0;
+    
 }
 .search-history-item {
     padding: 6px 0;
     list-style: none;
     margin-bottom: 15px;
+    color: var(--text-color);
 }
 .search-history-item:last-child {
     padding-bottom: 0;
@@ -553,13 +553,15 @@ color: red;
 .hearder__cart-list{
     display: none;
     position:absolute;
-    top:calc( 100% + 12px);
-    right:30px;
+    top:calc( 100% + 9px);
+    right:-22px;
+    padding:10px ;
     width: 400px;
     background-color: var(--white-color);
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px rgb(63, 62, 62);
     border-radius: 5px;
+    cursor: default;
 }
 .hearder__cart-list::before{
     content: "";
@@ -570,32 +572,125 @@ color: red;
     position: absolute;
     right: 8px;
     top:-31px;
-}
-.hearder__cart-list::after{
-    content: "";
-    display: block;
-    width: 100px;
-    height: 20px;
-    position: absolute;
-    right: 8px;
-    top: -20px;
+    cursor: pointer;
+    
 }
 
+
 /* khi k phai la div con cua cung 1 div  ma la 2 div khac nhau 
-thi phai dung dau + ~ de the hien va */
-.header__wrap-icon:hover +.hearder__cart-list {
+thi phai dung dau + ~ va div đó k di chuyển chuột vào được */
+.header__wrap-icon:hover .hearder__cart-list {
     display: block;
     
 }
 
-.hearder__cart-empty-list{
+.hearder__cart-empty-list:hover .hearder__cart-img-empty,
+.hearder__cart-empty-list:hover .desc{
     padding:28px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4rem;
+
+
 }
-.hearder__cart-list > p {
+.hearder__cart-list .desc {
     font-size: 1.4rem;
     color:var(--text-color) ;
+    display: none;
 
 }
 .hearder__cart-img-empty{
     width: 60%;
+    display: none;
+}
+/* khi co hang  */
+.cart-heading {
+    text-align: left;
+    opacity: 0.5;
+}  
+.hearder__cart-group {
+    padding-left: 0;
+    
+}
+.hearder__cart-item {
+    list-style: none;
+    margin-bottom: 8px;
+    
+}
+.hearder__cart-item:hover {
+    background-color: #f6f4f4; 
+    
+}
+.cart-link {
+    text-decoration: none;
+    display: flex;
+    color: var(--text-color);
+}
+.cart-img {
+    width:44px ;
+    object-fit: contain;
+    display: inline-block;
+
+}
+.cart-item-info {
+    display: flex;
+}
+.cart-item-info-text {
+    text-align: left;
+    flex: 2;
+}
+.cart-item-info-heading {
+    padding: 12px 0;
+    font-size: 1.4rem;
+    display:inline-block
+    
+}
+.cart-item-info-desc {
+    display: inline-block;
+    font-size: 1.1rem;
+}
+.cart-item-info-money {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }   
+.tienmua{
+    padding: 10px;
+}
+
+.item-monney {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-left: 2px;
+}
+.item-dau,
+.item-soluong {
+    font-size: 1.2rem;
+    margin-left: 2px;
+    
+}
+.item-clear {
+    font-size: 1.4rem;
+    border: none;
+    display: inline-block;
+    background-color: transparent;
+    width: 35%;
+    margin-left: 54px;
+
+}
+.item-clear:hover {
+    color: var(--primary-color);
+}
+.cart-btn{
+    float: right;
+    margin: 5px 14px; 
+}
+.btn-check {
+    padding: 10px;
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+}
