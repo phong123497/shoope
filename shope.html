@@ -19,18 +19,21 @@
             <div class="grid">
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <li class="navbar__item navbar__item--separate navbar__item-QRcode ">
-                            Vào cửa hàng trên ứng dụng shoope
-                            <div class="navbar__qrcode">
-                                <img src="./assets/image/qrcode.png" alt="QR code" class="qr-code">
-                                <div class="navbar__store">
-                                    <a href="#"><img  class="link-download" src="./assets/image/appstore.png" alt="appstore"></a>
-                                    <a href="#"><img  class="link-download" src="./assets/image/googlestore.png" alt="googlestore"></a>
-                                 </div>
-                            </div>
-
-                
-                        </li>
+                        <!-- lỗi bị che -->
+                        <div class="navbar__item-QRcode">
+                            <li class="navbar__item navbar__item--separate  ">
+                                    Vào cửa hàng trên ứng dụng shoope
+                                <div class="navbar__qrcode">
+                                    <img src="./assets/image/qrcode.png" alt="QR code" class="qr-code">
+                                    <div class="navbar__store">
+                                        <a href="#"><img  class="link-download" src="./assets/image/appstore.png" alt="appstore"></a>
+                                        <a href="#"><img  class="link-download" src="./assets/image/googlestore.png" alt="googlestore"></a>
+                                     </div>
+                                </div>
+    
+                    
+                            </li>
+                        </div>  
                         <li class="navbar__item ">Kết nối
                             <a href="#" class="navbar__link">
                                 <i class="navbar__icon fa-brands fa-facebook"></i>
@@ -43,12 +46,14 @@
                     </ul>
                     <ul class="navbar__list">
                         
-                        <li class="navbar__item navbar__item--notify">
+                        <li class="navbar__item ">
+                            <div class="navbar__item--notify">
+                                <a href="#" class="navbar__link">
+                                    <i class="navbar__icon fa-solid fa-bell"></i>
+                                    Thông báo
+                                </a>
+                            </div>
                             
-                            <a href="#" class="navbar__link">
-                                <i class="navbar__icon fa-solid fa-bell"></i>
-                                Thông báo
-                            </a>
                             <div class="navbar__notify">
                                 <div class="navbar__notify--header">
                                     <h3>Thông báo mới nhận</h3>
@@ -100,10 +105,20 @@
                                 <i class=" navbar__icon fa-regular fa-circle-question"></i>
                                 Trợ giúp
                             </a>
-
+                            <div class="navbar__item navbar__user">
+                                <img src="/assets/image/acount.png" alt="" class="navbar__user-img">  
+                                <span class="navbar__user-name">Nguyen Duy Phong</span>
+                                <div class="navbar__user-info">
+                                    <a href="#" class="navbar__user-info-link">Tài khoản của tôi</a>
+                                    <a href="#" class="navbar__user-info-link">Địa chỉ của tôi</a>
+                                    <a href="#" class="navbar__user-info-link">Đơn mua</a>
+                                    <a href="#" class="navbar__user-info-link">Đăng</a>
+                                </div>
+                            </div>
                         </li>
-                        <li class="navbar__item navbar__item--bold navbar__item--separate">Đăng kí</li>
-                        <li class="navbar__item navbar__item--bold">Đăng nhập</li>
+                        <!-- <li class="navbar__item navbar__item--bold navbar__item--separate">Đăng kí</li>
+                        <li class="navbar__item navbar__item--bold">Đăng nhập</li> -->
+
                     </ul>
 
                 </nav>
@@ -162,16 +177,16 @@
                                             <div class="cart-item-info">
                                                 <div class="cart-item-info-text">
                                                     <span class="cart-item-info-heading">Điện thoại Iphone14 pro </span>
-                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím  </span>
+                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím,Điện thoại Iphone14 pro 256g màu tím  </span>
 
                                                 </div>
                                                 <div class="cart-item-info-money">
                                                     <div class="tienmua">
-                                                        <span class="item-monney">1200000</span>
-                                                        <span class="item-dau"> *</span>
-                                                        <span class="item-soluong">1</span>
+                                                        <p class="item-monney">1200000</p>
+                                                        <p class="item-dau"> *</p>
+                                                        <p class="item-soluong">1</p>
                                                     </div>
-                                                    <button class="item-clear">Xóa</button>
+                                                    <div class="item-clear">Xóa</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -182,16 +197,96 @@
                                             <div class="cart-item-info">
                                                 <div class="cart-item-info-text">
                                                     <span class="cart-item-info-heading">Điện thoại Iphone14 pro </span>
-                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím  </span>
+                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím,Điện thoại Iphone14 pro 256g màu tím  </span>
 
                                                 </div>
                                                 <div class="cart-item-info-money">
                                                     <div class="tienmua">
-                                                        <span class="item-monney">1200000</span>
-                                                        <span class="item-dau"> *</span>
-                                                        <span class="item-soluong">1</span>
+                                                        <p class="item-monney">1200000</p>
+                                                        <p class="item-dau"> *</p>
+                                                        <p class="item-soluong">1</p>
                                                     </div>
-                                                    <button class="item-clear">Xóa</button>
+                                                    <div class="item-clear">Xóa</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hearder__cart-item">
+                                        <a href="#" class="cart-link">
+                                            <img src="./assets/image/iphone.jfif" alt="Iphone14" class="cart-img">
+                                            <div class="cart-item-info">
+                                                <div class="cart-item-info-text">
+                                                    <span class="cart-item-info-heading">Điện thoại Iphone14 pro </span>
+                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím,Điện thoại Iphone14 pro 256g màu tím  </span>
+
+                                                </div>
+                                                <div class="cart-item-info-money">
+                                                    <div class="tienmua">
+                                                        <p class="item-monney">1200000</p>
+                                                        <p class="item-dau"> *</p>
+                                                        <p class="item-soluong">1</p>
+                                                    </div>
+                                                    <div class="item-clear">Xóa</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hearder__cart-item">
+                                        <a href="#" class="cart-link">
+                                            <img src="./assets/image/iphone.jfif" alt="Iphone14" class="cart-img">
+                                            <div class="cart-item-info">
+                                                <div class="cart-item-info-text">
+                                                    <span class="cart-item-info-heading">Điện thoại Iphone14 pro </span>
+                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím,Điện thoại Iphone14 pro 256g màu tím  </span>
+
+                                                </div>
+                                                <div class="cart-item-info-money">
+                                                    <div class="tienmua">
+                                                        <p class="item-monney">1200000</p>
+                                                        <p class="item-dau"> *</p>
+                                                        <p class="item-soluong">1</p>
+                                                    </div>
+                                                    <div class="item-clear">Xóa</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hearder__cart-item">
+                                        <a href="#" class="cart-link">
+                                            <img src="./assets/image/iphone.jfif" alt="Iphone14" class="cart-img">
+                                            <div class="cart-item-info">
+                                                <div class="cart-item-info-text">
+                                                    <span class="cart-item-info-heading">Điện thoại Iphone14 pro </span>
+                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím,Điện thoại Iphone14 pro 256g màu tím  </span>
+
+                                                </div>
+                                                <div class="cart-item-info-money">
+                                                    <div class="tienmua">
+                                                        <p class="item-monney">1200000</p>
+                                                        <p class="item-dau"> *</p>
+                                                        <p class="item-soluong">1</p>
+                                                    </div>
+                                                    <div class="item-clear">Xóa</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hearder__cart-item">
+                                        <a href="#" class="cart-link">
+                                            <img src="./assets/image/iphone.jfif" alt="Iphone14" class="cart-img">
+                                            <div class="cart-item-info">
+                                                <div class="cart-item-info-text">
+                                                    <span class="cart-item-info-heading">Điện thoại Iphone14 pro </span>
+                                                    <span class="cart-item-info-desc">Điện thoại Iphone14 pro 256g màu tím,Điện thoại Iphone14 pro 256g màu tím  </span>
+
+                                                </div>
+                                                <div class="cart-item-info-money">
+                                                    <div class="tienmua">
+                                                        <p class="item-monney">1200000</p>
+                                                        <p class="item-dau"> *</p>
+                                                        <p class="item-soluong">1</p>
+                                                    </div>
+                                                    <div class="item-clear">Xóa</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -212,11 +307,713 @@
             </div>
         </header>
 
-        <div class="container">
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-link">Máy Tính Bàn</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-link"> Màn Hình</a>
+                                </li>
+            
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Linh Kiện Máy Tính</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Thiết Bị Lưu Trữ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="hone-filter__lable">Sắp  xếp theo</span>
+                            <button class="hone-filter__btn btn">Phổ biến</button>
+                            <button class="hone-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="hone-filter__btn btn">Bán chạy</button>
 
+                            <div class="select-input">
+                                <span class="input-label">Giá</span>
+                                <i class="select-icon select-input-icon fa-solid fa-caret-down"></i>
+                                <ul class="select-input-list">
+                                    <li class="select-input-item">
+                                        <a href="#" class="select-input-item-link">Giá:Cao tới thấp</a>
+                                    </li>
+
+                                    <li class="select-input-item">
+                                        <a href="#" class="select-input-item-link">Giá:Thấp tơi cao</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="page-num">
+                                    <span class="page-current">1</span>/14
+                                </span>
+                                
+                                <div class="page-control">
+                                    <a href="#" class="page-control-link">
+                                         <i class="page-control-icon select-icon fa-solid fa-caret-left"></i>
+                                    </a>
+                                    <a href="#" class="page-control-link">
+                                         <i class="page-control-icon select-icon fa-solid fa-caret-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-img" style="background-image:url(https://cf.shopee.vn/file/sg-11134201-22110-tmazurad2rjv37);"></div>
+                                        <div class="home-product-item-body">
+                                            <h4 class="home-product-name">Màn hình vi tính 17 đến 22 inch sáng đẹp không lỗi</h4>
+                                            <div class="home-product-price">
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-old">1200000</span>
+                                                <span class="home-product-currency-">-</span>
+                                                <span class="home-product-currency-unit">đ</span>
+                                                <span class="home-product-current">1000000</span>
+                                            </div>
+                                            <div class="home-product-action">
+                                                <span class="home-product-item-like">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <!-- <i class="fa-solid fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-ratting">
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item-ratting-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+
+                                                <span class="home-product-item-sold">
+                                                        10 Đã bán
+                                                    <!-- <span class="home-product-item-quantity">5</span> -->
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item-origin">
+                                               <span class="home-product-item-brand">Sam Sung</span>
+                                               <span class="home-product-item-address">Hà Nội</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="home-product-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-sale">
+                                            <span class="home-product-sale-percent">10% </span>
+                                            <span class="home-product-sale-lable">Giảm</span>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                
+
+
+                                
+                            </div>
+                        </div>
+                        <!-- chuyen trang -->
+                        <ul class="pagination">
+                            <li class="pagination-item ">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon fa-solid fa-caret-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item-current">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon ">1</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon ">2</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon ">3</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon ">4</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon ">5</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon ">...</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon ">14</i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="pagination-icon fa-solid fa-caret-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+         
         </div>
 
         <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4 grid__column-2-5">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trung tâm trợ giúp </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Shoope mail</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Giới thiệu</h3> 
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Điều khoản</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Chính Sách Bảo Mật</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Thanh toán</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <img src="./assets/image/product/visa2.png" alt="logo" class="footer-logo">
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <img src="./assets/image/product/visa.png" alt="logo" class="footer-logo">
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <img src="./assets/image/product/jcb.png" alt="logo" class="footer-logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Theo dõi chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                        Tiktok
+                                    </a>
+                                </li>    
+                            
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer-qrcode">
+                            <img src="./assets/image/qrcode.png" alt="QR code" class="qr-code">
+                            <div class="footer-store">
+                                <a href="#"><img  class="footer-link-download" src="./assets/image/appstore.png" alt="appstore"></a>
+                                <a href="#"><img  class="footer-link-download" src="./assets/image/googlestore.png" alt="googlestore"></a>
+                             
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__row">
+                   <div class="copyright">
+                    <p>Bản quyền thuộc về công ty shoope</p>
+                    </div>
+                </div>
+            </div>
 
         </footer>
     </div>
